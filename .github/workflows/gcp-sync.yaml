@@ -24,7 +24,7 @@ jobs:
         uses: 'google-github-actions/auth@v2'
         with:
           workload_identity_provider: 'projects/1064390151880/locations/global/workloadIdentityPools/shared-github-oidc/providers/github'
-          service_account: '${{secrets.GCP_SA_NAME}}n@${{secrets.GCP_PROJECT_ID}}.iam.gserviceaccount.com'
+          service_account: '${{secrets.GCP_SA_NAME}}@${{secrets.GCP_PROJECT_ID}}.iam.gserviceaccount.com'
           token_format: 'access_token'
           project_id: ${{secrets.GCP_PROJECT_ID}}
       - 
