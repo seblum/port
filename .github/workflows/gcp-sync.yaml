@@ -24,9 +24,9 @@ jobs:
         uses: 'google-github-actions/auth@v2'
         with:
           workload_identity_provider: 'projects/1064390151880/locations/global/workloadIdentityPools/shared-github-oidc/providers/shared-github-oidc'
-          service_account: '${{secrets.GCP_SA_NAME}}@${{secrets.GCP_PROJECT_ID}}.iam.gserviceaccount.com'
+          service_account: 'port-integration@shared-445422.iam.gserviceaccount.com'
           token_format: 'access_token'
-          project_id: ${{secrets.GCP_PROJECT_ID}}
+          project_id: 'shared-445422'
       - 
         name: 🔑 Get Google Application Credentials
         id: get-google-application-credentials
