@@ -2,7 +2,6 @@ name: GCP Integration
 
 on:
   workflow_dispatch:
-  push:
   
 jobs:
   run-integration:
